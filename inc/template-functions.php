@@ -3,7 +3,7 @@
  * Additional features to allow styling of the templates
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Evelina_Thoren
  * @since 1.0
  */
 

@@ -3,7 +3,7 @@
  * Displays top navigation
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Evelina_Thoren
  * @since 1.0
  * @version 1.2
  */

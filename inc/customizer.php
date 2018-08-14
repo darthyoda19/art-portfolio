@@ -3,7 +3,7 @@
  * Twenty Seventeen: Customizer
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Evelina_Thoren
  * @since 1.0
  */
 

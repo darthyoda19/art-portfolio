@@ -3,7 +3,7 @@
  * Twenty Seventeen: Color Patterns
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Evelina_Thoren
  * @since 1.0
  */
 
