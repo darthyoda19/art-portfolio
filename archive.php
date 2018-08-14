@@ -14,6 +14,7 @@ get_header(); ?>
 
 <div class="wrap">
 
+	
 	<?php if ( have_posts() ) : ?>
 		<header class="page-header">
 			<?php
@@ -25,6 +26,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<p>TEST ARCHIVE</p>
 
 		<?php
 		if ( have_posts() ) : ?>

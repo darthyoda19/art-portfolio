@@ -17,6 +17,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 	</header><!-- .entry-header -->
+	<p>TEST TEMPLATE CONTENT PAGE</p>
 	<div class="entry-content">
 		<?php
 			the_content();

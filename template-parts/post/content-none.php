@@ -17,6 +17,7 @@
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
 	</header>
 	<div class="page-content">
+		<p>TEST CONTENT NONE</p>
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
