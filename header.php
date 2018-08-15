@@ -18,6 +18,11 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
+	<!-- FOUNDATION + SITE STYLES  -->
+	<?php 
+		wp_enqueue_style('evelina-thorne', get_template_directory_uri() . '/dist/css/style.css' );
+	?>
 </head>
 
 <body <?php body_class(); ?>>
