@@ -1,0 +1,37 @@
+{
+  "name": "evelina-thoren",
+  "version": "1.0.0",
+  "description": "art portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm update && gulp",
+    "stage": "npm update && gulp stage --env stage"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-modernizr": "^2.0.4",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.4",
+    "gulp-sourcemaps": "^2.6.4",
+    "jquery-ui": "^1.12.1",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.22.2",
+    "motion-ui": "^1.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darthyoda19/art-portfolio.git"
+  },
+  "author": "jake crawford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darthyoda19/art-portfolio/issues"
+  },
+  "homepage": "https://github.com/darthyoda19/art-portfolio#readme"
+}
