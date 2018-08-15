@@ -20,16 +20,45 @@ get_header();
 		<main id="main" class="site-main">
 			
 		<div class="grid-x">
-			<div class="cell">full width cell</div>
-			<div class="cell">full width cell</div>
-		</div>
-		<div class="grid-x">
-		<div class="cell small-6">6 cells</div>
-		<div class="cell small-6">6 cells</div>
-		</div>
-		<div class="grid-x">
-		<div class="cell medium-6 large-4">12/6/4 cells</div>
-		<div class="cell medium-6 large-8">12/6/8 cells</div>
+			<div class="cell medium-4">
+				<img src="http://placehold.it/100" alt="logo">
+				<h1>This is the Sidebar</h1>
+				<ul class="vertical menu">
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+					<li><a href="#">Page 4</a></li>
+					<li><a href="#">Page 5</a></li>
+				</ul>
+			</div>
+			<div class="cell medium-8">
+				<div class="grid-x">
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300x600" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+					<div class="cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<?php
