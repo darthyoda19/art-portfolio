@@ -105,3 +105,11 @@
 		width: 50%;
 	}
 }
+
+.menu {
+	&.secondary {
+		li {
+			font-size: 40px;
+		}
+	}
+}

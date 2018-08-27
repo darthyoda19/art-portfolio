@@ -14,48 +14,74 @@
 
 get_header();
 ?>
-	<style>.cell{background-color: lightblue; color: white; padding: 20px; border:1px solid white;}</style>
+	<!-- <style>.cell{background-color: lightpink; color: white; border:1px solid white;}</style> -->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
 		<div class="grid-x">
-			<div class="cell medium-4">
-				<img src="http://placehold.it/100" alt="logo">
-				<h1>This is the Sidebar</h1>
-				<ul class="vertical menu">
-					<li><a href="#">Page 1</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-					<li><a href="#">Page 4</a></li>
-					<li><a href="#">Page 5</a></li>
-				</ul>
+			<!-- # start header -->
+			<!-- <div class="header cell small-12">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="http://placehold.it/1440x600" alt="header">
+				</a>
+			</div> -->
+			<!-- # end header -->
+			<!-- # start sidebar -->
+			<div class="sidebar cell small-6 medium-4">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/ev-logo.jpg" alt="logo">
+			</a>
+			<nav id="pages-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'evelina-thoren' ); ?></button>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu'        => 'Menu 1',
+						'menu_class' => 'vertical menu primary',
+						'container' => 'ul'
+						) );
+						?>
+				</nav><!-- #pages-navigation -->
+				<nav id="categories-navigation">
+					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'evelina-thoren' ); ?></button>
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-2',
+						'menu'        => 'Menu 2',
+						'menu_class' => 'vertical menu secondary',
+						'container' => 'ul'
+						) );
+						?>
+				</nav><!-- #categories-navigation -->
 			</div>
-			<div class="cell medium-8">
-				<div class="grid-x">
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+			<!-- # end sidebar -->
+			<div class="main cell small-6 medium-8">
+				<div class="grid-x" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100, "percentPosition": true }'>
+					<div class="grid-sizer"></div>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300x600" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600x1000" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/300" alt="thumbnail"></a>
+					<div class="grid-item cell medium-6 large-4">
+						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
 				</div>
 			</div>
