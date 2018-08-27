@@ -55,33 +55,52 @@ get_header();
 						?>
 				</nav><!-- #categories-navigation -->
 			</div>
+			<style>
+				.grid {
+					width: 100%;
+				}
+				.grid-item {
+					/* width: 33.3333%; */
+					/* height: 120px; */
+					float: left;
+					background: #D26;
+					border: 3px solid #D26;
+				}
+
+				.grid-item--width2 { width:  320px; }
+				.grid-item--width3 { width:  480px; }
+				.grid-item--width4 { width:  720px; }
+
+				.grid-item--height2 { height: 200px; }
+				.grid-item--height3 { height: 260px; }
+				.grid-item--height4 { height: 360px; }
+			</style>
 			<!-- # end sidebar -->
 			<div class="main cell small-6 medium-8">
-				<div class="grid-x" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100, "percentPosition": true }'>
-					<div class="grid-sizer"></div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+				<div class="grid grid-x" data-masonry='{ "itemSelector": ".grid-item" }'>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600x1000" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600x1000" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
-					<div class="grid-item cell medium-6 large-4">
-						<a href="#" class="thumbnail"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
+					<div class="grid-item cell small-12 medium-6 large-4">
+						<a href="#"><img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"></a>
 					</div>
 				</div>
 			</div>
