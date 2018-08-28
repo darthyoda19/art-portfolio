@@ -14,12 +14,11 @@
 
 get_header();
 ?>
-	<!-- <style>.cell{background-color: lightpink; color: white; border:1px solid white;}</style> -->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
-		<div class="grid-x">
+		<div class="site-content grid-x">
 			<!-- # start header -->
 			<!-- <div class="header cell small-12">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -28,9 +27,9 @@ get_header();
 			</div> -->
 			<!-- # end header -->
 			<!-- # start sidebar -->
-			<div class="sidebar cell small-6 medium-4">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/ev-logo.jpg" alt="logo">
+			<div class="widget-area cell small-6 medium-4">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img class="logo__site" src="<?php echo get_template_directory_uri(); ?>/images/ev-logo.jpg" alt="logo">
 			</a>
 			<nav id="pages-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'evelina-thoren' ); ?></button>
@@ -142,6 +141,8 @@ get_header();
 		?>
 
 		</main><!-- #main -->
+		<aside>
+		</aside>
 	</div><!-- #primary -->
 
 <?php
