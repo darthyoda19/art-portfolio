@@ -1,5 +1,12 @@
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
+$purple: #9d18b8;
+$pink: #ee80cc;
+$pink-light: lighten($pink, 20%);
+$pink-dark: darken($pink, 20%);
+$green: #0bc29a;
+$white: #ffffff;
+
+$color__background-body: $white;
+$color__background-screen: $white;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
@@ -8,9 +15,9 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: $pink;
+$color__link-visited: $pink;
+$color__link-hover: $pink-dark;
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;
