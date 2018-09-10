@@ -17,14 +17,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+	<!-- <?php wp_head(); ?> -->
 
 	<!-- FOUNDATION + SITE STYLES  -->
-	<?php 
-		wp_enqueue_style('evelina-thorne', get_template_directory_uri() . '/dist/css/style.css' );
-	?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css"">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
+
 	<!-- <script src="/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script> -->
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script> -->
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

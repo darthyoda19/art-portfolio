@@ -107,9 +107,14 @@
 }
 
 .menu {
+	&.primary {
+		font-size: 20px;
+		font-weight: 700;
+	}
 	&.secondary {
 		li {
 			font-size: 40px;
+			font-weight: 300;
 		}
 	}
 }
