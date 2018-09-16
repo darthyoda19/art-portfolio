@@ -1,3 +1,9 @@
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
 // self calling function
 $('document').ready(function(){
 
@@ -6,7 +12,11 @@ $('document').ready(function(){
 // init Isotope
 var iso = new Isotope( '.grid', {
   itemSelector: '.element-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
+  masonry: {
+    // use outer width of grid-sizer for columnWidth
+    columnWidth: '.grid-sizer'
+  }
 });
 
 // filter functions

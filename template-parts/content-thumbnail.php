@@ -23,11 +23,11 @@
 	// Category Slug array to string
 	$postCategories = implode(" ",$postCategoriesSlugArray);
 ?>
-<div class="grid-item cell small-12 medium-6 large-4 <?php echo $postCategories; ?>">
-	<a href="#">
-		<img src="http://placehold.it/600" class="img-responsive" alt="thumbnail">
-		<p><?php echo $postCategories; ?></p>
-		<!-- <?php evelina_thoren_post_thumbnail(); ?> -->
+<div class="grid-item cell small-12 medium-6 large-4 element-item <?php echo $postCategories; ?>">
+	<a href="#" class="th">
+		<!-- <img src="http://placehold.it/600" class="img-responsive" alt="thumbnail"> -->
+		<!-- <p><?php echo $postCategories; ?></p> -->
+		<?php evelina_thoren_post_thumbnail(); ?>
 	</a>
 </div>
 <!-- #post-<?php the_ID(); ?> -->

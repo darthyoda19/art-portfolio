@@ -26,7 +26,7 @@
 
 	<!-- <script src="/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script> -->
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/jquery/dist/jquery.min.js"></script>
-	<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script> -->
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
 </head>
