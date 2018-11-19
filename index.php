@@ -49,6 +49,9 @@ get_header();
 						) );
 						?>
 				</nav><!-- #categories-navigation -->
+				<?php
+					get_template_part( 'template-parts/content-category-menu', get_post_type() );
+				?>
 			</div>
 			<!-- # end sidebar -->
 			<div class="main cell small-6 medium-8">
