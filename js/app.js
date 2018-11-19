@@ -12,7 +12,7 @@ $('document').ready(function(){
 // init Isotope
 var iso = new Isotope( '.grid', {
   itemSelector: '.element-item',
-  layoutMode: 'fitRows',
+  percentPosition: true,
   masonry: {
     // use outer width of grid-sizer for columnWidth
     columnWidth: '.grid-sizer'
