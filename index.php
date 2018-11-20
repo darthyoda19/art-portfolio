@@ -49,38 +49,36 @@ get_header();
 						) );
 						?>
 				</nav><!-- #categories-navigation -->
-				<?php
-					$categories = get_categories( array(
-						'orderby' => 'name',
-						'order'   => 'ASC',
-						'exclude' => array(1)
-					) );
-					
-					foreach( $categories as $category ) {
-						$category_link = sprintf( 
-							'<a href="%1$s" alt="%2$s">%3$s</a>',
-							esc_url( get_category_link( $category->term_id ) ),
-							esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
-							esc_html( $category->name )
-						);
+				<div class="button-group filters-button-group">
+					<button class="button is-checked" data-filter="*">All</button><br>
+					<?php
+						$categories = get_categories( array(
+							'orderby' => 'name',
+							'order'   => 'ASC',
+							'exclude' => array(1)
+						) );
 						
-						echo '<p>' . sprintf( esc_html__( 'Category: %s', 'textdomain' ), $category_link ) . '</p> ';
-						echo '<p>' . sprintf( esc_html__( 'Description: %s', 'textdomain' ), $category->description ) . '</p>';
-						echo '<p>' . sprintf( esc_html__( 'Post Count: %s', 'textdomain' ), $category->count ) . '</p>';
-					} 
-				?>
+						foreach ( $categories as $category ) {
+							printf( '<button class="button" href="%1$s" data-filter=".%3$s">%2$s</button><br />',
+								esc_url( get_category_link( $category->term_id ) ),
+								esc_html( $category->name ),
+								esc_html( $category->slug )
+							);
+						}
+					?>
+				</div>
 				<?php
 					get_template_part( 'template-parts/content-category-menu', get_post_type() );
 				?>
 			</div>
 			<!-- # end sidebar -->
 			<div class="main cell small-6 medium-8">
-				<div class="button-group filters-button-group">
+				<!-- <div class="button-group filters-button-group">
 					<button class="button is-checked" data-filter="*">show all</button><br>
 					<button class="button" data-filter=".pins">pins</button><br>
 					<button class="button" data-filter=".paramore">paramore</button><br>
 					<button class="button" data-filter=".coloring-books">coloring books</button>
-				</div>
+				</div> -->
 				<div class="grid grid-x thumnails" data-masonry='{ "itemSelector": ".grid-item" }'>
 					<div class="grid-sizer"></div>
 					<?php
