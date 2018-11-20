@@ -38,19 +38,8 @@ get_header();
 						) );
 						?>
 				</nav><!-- #pages-navigation -->
-				<nav id="categories-navigation">
-					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'evelina-thoren' ); ?></button>
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-2',
-						'menu'        => 'Menu 2',
-						'menu_class' => 'vertical menu secondary',
-						'container' => 'ul'
-						) );
-						?>
-				</nav><!-- #categories-navigation -->
-				<div class="button-group filters-button-group">
-					<button class="button is-checked" data-filter="*">All</button><br>
+				<ul class="vertical menu secondary categories">
+					<li class="menu-item is-checked"><a data-filter="*">All</a></li>
 					<?php
 						$categories = get_categories( array(
 							'orderby' => 'name',
@@ -59,26 +48,17 @@ get_header();
 						) );
 						
 						foreach ( $categories as $category ) {
-							printf( '<button class="button" href="%1$s" data-filter=".%3$s">%2$s</button><br />',
+							printf( '<li class="menu-item" href="%1$s"><a data-filter=".%3$s">%2$s</a></li>',
 								esc_url( get_category_link( $category->term_id ) ),
 								esc_html( $category->name ),
 								esc_html( $category->slug )
 							);
 						}
 					?>
-				</div>
-				<?php
-					get_template_part( 'template-parts/content-category-menu', get_post_type() );
-				?>
+				</ul>
 			</div>
 			<!-- # end sidebar -->
 			<div class="main cell small-6 medium-8">
-				<!-- <div class="button-group filters-button-group">
-					<button class="button is-checked" data-filter="*">show all</button><br>
-					<button class="button" data-filter=".pins">pins</button><br>
-					<button class="button" data-filter=".paramore">paramore</button><br>
-					<button class="button" data-filter=".coloring-books">coloring books</button>
-				</div> -->
 				<div class="grid grid-x thumnails" data-masonry='{ "itemSelector": ".grid-item" }'>
 					<div class="grid-sizer"></div>
 					<?php
@@ -110,10 +90,10 @@ get_header();
 		</div>
 
 		</main><!-- #main -->
-		<aside>
-		</aside>
+		<!-- <aside>
+		</aside> -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
-get_footer();
+// get_sidebar();
+// get_footer();

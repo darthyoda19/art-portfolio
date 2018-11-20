@@ -34,10 +34,10 @@ var filterFns = {
 };
 
 // bind filter button click
-var filtersElem = document.querySelector('.filters-button-group');
+var filtersElem = document.querySelector('.secondary');
 filtersElem.addEventListener( 'click', function( event ) {
   // only work with buttons
-  if ( !matchesSelector( event.target, 'button' ) ) {
+  if ( !matchesSelector( event.target, 'a' ) ) {
     return;
   }
   var filterValue = event.target.getAttribute('data-filter');
@@ -47,7 +47,7 @@ filtersElem.addEventListener( 'click', function( event ) {
 });
 
 // change is-checked class on buttons
-var buttonGroups = document.querySelectorAll('.button-group');
+var buttonGroups = document.querySelectorAll('.menu');
 for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
   var buttonGroup = buttonGroups[i];
   radioButtonGroup( buttonGroup );
@@ -56,7 +56,7 @@ for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
 function radioButtonGroup( buttonGroup ) {
   buttonGroup.addEventListener( 'click', function( event ) {
     // only work with buttons
-    if ( !matchesSelector( event.target, 'button' ) ) {
+    if ( !matchesSelector( event.target, 'a' ) ) {
       return;
     }
     buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
